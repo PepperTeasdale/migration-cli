@@ -37,12 +37,6 @@ export default class ComposedIntent implements Intent {
   }
 
   // TODO: adjust interface so we don't have to implement all this
-  getSaveAction (): APIAction {
-    return null
-  }
-  getPublishAction (): APIAction {
-    return null
-  }
   isEditorInterfaceUpdate (): boolean {
     return false
   }
