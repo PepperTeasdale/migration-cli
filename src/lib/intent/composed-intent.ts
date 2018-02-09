@@ -2,7 +2,6 @@ import Intent from '../interfaces/intent'
 import { RawStep } from '../interfaces/raw-step'
 import { PlanMessage, Section } from '../interfaces/plan-message'
 import { difference, groupBy, flatten, values, entries } from 'lodash'
-import { APIAction } from '../action/action';
 
 function mergeSections (sections: Section[]): Section {
   const sameSections = groupBy(sections, 'heading')
