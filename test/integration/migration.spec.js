@@ -478,7 +478,7 @@ describe('the migration', function () {
     expect(blogEntriesWithoutSys).to.eql(entries);
   }));
 
-  it('changes the editor interface', co(function* () {
+  it('changes the editor interface', co(function * () {
     yield migrator(changeEditorInterface);
 
     const editorInterfaces = yield request({
